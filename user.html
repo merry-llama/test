@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Пользователь</title>
+</head>
+<body>
+    <div id="type-user" class="invisible">Пользователь</div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">  
+                <form id="searchUser">         
+                    <div class="row">     
+                        <div class="col"> 
+                            <img class="" src="http://placehold.it/38x38" />
+                        </div>             
+                        <div class="col-5"> 
+                            <input type="text" class="form-control" name="userName" id="userName" placeholder="Введите имя для поиска">
+                        </div>
+                        <div class="col-2">
+                            <div class="dropdown show mb-4">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Тип пользователя
+                                </a>
+                
+                                <div id="statusUsers" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-2">
+                            <button id="searchFilters" class="btn btn-primary btn-block" type="button" disabled>Найти</button>
+                        </div>  
+                        <div class="col-2">
+                            <button id="resetFilters" class="btn btn-primary btn-block" type="button">Сбросить фильтры</button>
+                        </div>                  
+                    </div>
+                </form>
+                <div class="row">
+                    <div id="usersTable" class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <script  src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
